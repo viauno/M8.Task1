@@ -44,8 +44,8 @@ namespace ConsoleApp1
                         {
                             if (DateTime.Now - System.IO.File.GetLastWriteTime(d) > TimeSpan.FromMinutes(30))
                             {
-                                Directory.Delete(d, true);
-                            }
+                            Directory.Delete(d, true);
+                        }
                             else { Console.WriteLine($"Папка {d} был модифицирована менее 30 минут назад"); }
                         }
                     }
